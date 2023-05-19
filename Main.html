@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <blockquote>
+        <h1>Онлайн зоомагазин</h1>
+    </blockquote>
+</header>
+
+
+
+
+
+
+<nav>
+
+    <a href="Main.html">Товари</a>
+    <a href="About.html">Про нас</a>
+    <a href="#">Контакти</a>
+    <div id="cart-icon" onclick="showCart()">
+        <img src="Pictures/cart.png" alt="Cart Icon" width="40">
+        <span id="cart-counter">0</span>
+    </div>
+</nav>
+
+<section>
+    <article>
+        <h2>Ласощі для собак Carnilove Quail with Oregano</h2>
+        <img class="fit-picture" src="Pictures/CarniloveQuail.webp" alt="Carnilove" width="400">
+        <p>Напівм'які ласощі для собак всіх порід, з перепелом та орегано для здорового травлення.</p>
+        <button class="button-cute" onclick="addToCart('Ласощі для собак Carnilove Quail with Oregano')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Сухий корм для стерилізованих котів Optimeal Adult Cat Sterilised Turkey With Oat</h2>
+        <img class="fit-picture" src="Pictures/optimeal.webp" alt="Optimeal" width="400">
+        <p>Повнораціонний сухий корм для стерилізованих кішок і кастрованих котів - індичка і овес.</p>
+        <button class="button-cute" onclick="addToCart('Optimeal Adult Cat Sterilised Turkey')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Светр для кота Pet Fashion персик</h2>
+        <img class="fit-picture" src="Pictures/Svetr.webp" alt="Svetr" width="400">
+        <p>Тепла і зручна модель з трикотажу «ангора» буде до вподоби найпримхливішим котикам. Високий комір та пухнаста підкладка подарують тепло і комфорт. Взимку чи в міжсезоння котикам стане у пригоді светр CAT. Модель з теплого еластичного трикотажу швидко вдягається, чудово зігріває. </p>
+        <button class="button-cute" onclick="addToCart('Светр для кота Pet Fashion персик')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Іграшка для котів Trixie Бабак</h2>
+        <img class="fit-picture" src="Pictures/babak.webp" alt="Babak" width="400">
+        <p>стимулює мисливський інстинкт кота</p>
+        <button class="button-cute" onclick="addToCart('Іграшка для котів Trixie Бабак')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Шлейка з повідцем для кошенят Trixie нейлон «Kitty Cat»</h2>
+        <img class="fit-picture" src="Pictures/shleyka.webp" alt="Shleyka" width="400">
+        <p> для дрібних котів і кошенят
+            • нейлон
+            • плавно регулюються
+            • зі зручними пластиковими застібками і металевим карабіном</p>
+        <button class="button-cute" onclick="addToCart('Шлейка з повідцем для кошенят Trixie нейлон «Kitty Cat»')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Ласощі для котів GimCat Kase-Rollis</h2>
+        <img class="fit-picture" src="Pictures/gimcat.webp" alt="Gimcat" width="400">
+        <p>Ласощі з сиром у вигляді забавних роликів містить вітаміни груп А, D, Е, дуже корисні для Вашого вихованця. Крім того, улюбленець, безумовно, отримає задоволення під час гри з роликами.</p>
+        <button class="button-cute" onclick="addToCart('Ласощі для котів GimCat Kase-Rollis')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Ласощі для котів GimCat Multi-Vitamin Paste</h2>
+        <img class="fit-picture" src="Pictures/multivit.webp" alt="Multivit" width="400">
+        <p>Паста GimCat Multi-Vitamin Paste містить унікальний комплекс 3-в-1, що включає 12 життєво важливих вітамінів, бета-глюкан і біологічно цінні масла, які надають комплексний зміцнювальний вплив на імунну систему і активізують захисні функції організму.</p>
+        <button class="button-cute" onclick="addToCart('Ласощі для котів GimCat Multi-Vitamin Paste')">Додати до кошика</button>
+    </article>
+
+    <article>
+        <h2>Ласощі для котів Trixie Trainer Snack Mini Nuggets</h2>
+        <img class="fit-picture" src="Pictures/nuggets.webp" alt="Optimeal" width="400">
+        <p>Інгредієнти: риба (тунець 58%), куряче м'ясо (26%), тапіоковий крохмаль, гліцерин, горохове волокно, котяча м'ята (0,4%), хлорид натрію.
+            Аналітичний склад: сирий білок 40,0%, сирий жир 5,0%, сира зола 3,5%, сира клітковина 0,5%, вологість 20,0%.</p>
+        <button class="button-cute" onclick="addToCart('Ласощі для котів Trixie Trainer Snack Mini Nuggets')">Додати до кошика</button>
+    </article>
+
+</section>
+
+<div id="cart-overlay" onclick="hideCart()"></div>
+<div id="cart-popup">
+    <h3>Кошик</h3>
+    <div id="cart-items"></div>
+</div>
+
+</body>
+</html>
